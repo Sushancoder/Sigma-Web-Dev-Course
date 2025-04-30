@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+
+        #art1 {
+            background-color: rgba(4, 0, 128, 0.777);
+            color: white;
+        }
+
+        canvas {
+            border: 10px solid black;
+            background-color: rgb(182, 119, 205);
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <h1 class="highlight">The use case of CSS</h1>
+        <hr size="5" color="black" />
+        <p style="font-weight: bold; color: green">
+            This is how we use the CSS in our website.
+        </p>
+        <article title="This uses the art1 id" id="art1">
+            This is an article tag in html to show how the id works in html using
+            CSS
+        </article>
+        <br />
+        <a href="https://www.gardeningknowhow.com">Go to Gardening Tips</a>
+        <br />
+        <button type="button" style="background-color: red; color: white">
+            Click here
+        </button>
+    </div>
+
+    <div>
+        <table border="1">
+            <tr>
+                <th colspan="4" align="center">Merged Columns</th>
+            </tr>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 2</td>
+                <td>Column 2</td>
+            </tr>
+        </table>
+        <br />
+        <table border="1">
+            <tr>
+                <th>Row 1, Column 1</th>
+                <th rowspan="5" align="center">Merged Rows</th>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+            </tr>
+
+            <caption align="bottom">
+                Student Details
+            </caption>
+        </table>
+        <br>
+
+        <table border="1">
+            <!-- Caption -->
+            <caption>
+                Employee Information
+            </caption>
+
+            <!-- Table Header -->
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Alice</td>
+                    <td>Developer</td>
+                    <td>$80,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bob</td>
+                    <td>Designer</td>
+                    <td>$70,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carol</td>
+                    <td>Manager</td>
+                    <td>$90,000</td>
+                </tr>
+            </tbody>
+
+            <!-- Table Footer -->
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Employees</td>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <br><br><br>
+    <div>
+        <form action="/submit" method="post">
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <!-- Radio buttons for gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+
+            <br><br>
+            <form>
+                <input type="text" pattern="[a-zA-Z0-9]+">
+
+            </form>
+    </div>
+    <br><br>
+
+    <div>
+        <svg height="30" width="30">
+            <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+        </svg>
+    </div>
+    <br><br>
+    <div>
+        <iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <div>
+        <p>A simple python code</p>
+        <pre>
+        <code>
+            for i in range(100):
+                print(i)
+
+            name = int(input("Type your name here: "))
+
+            print(f"Hello {name}")
+        </code>
+        </pre>
+    </div>
+    <br><br>
+    <div>
+        <header>
+            <h1>My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <footer>
+            <p>Copyright 2023</p>
+        </footer>
+
+        <figure>
+            <img src="image.jpg" alt="An example image">
+            <figcaption>This is an example image.</figcaption>
+        </figure>
+    </div>
+    <br><br>
+    <div>
+        <canvas id="myCanvas" width="500" height="300" title="this is an example of a canvas">This is an example of a
+            canvas</canvas>
+    </div>
+
+<br><br>
+    <div>
+        &lt;  <!-- &lt; for < -->
+        &gt;  <!-- &gt; for> -->
+        &amp; <!-- &amp; for & -->
+        &nbsp;<!-- &nbsp; for a non-breaking space -->
+        &copy;<!-- &copy; for © -->
+        <p>The price is 10 &lt; 20.</p>
+        <p>Copyright &copy; 2023.</p>
+        <p>This is an example&nbsp;text.</p>
+    </div>
+<br><br>
+<div>
+    <blockquote cite="source-url">
+        Quotation text here.
+        Practice makes man or woman or any other organism perfect
+      </blockquote>
+
+      <q cite="source-url">Quotation text here.</q>
+
+      <blockquote cite="https://example.com">
+        This is a long quote from an external source. This quote can span multiple lines and paragraphs.
+      </blockquote>
+
+      The philosopher said, <q cite="https://example.com">The unexamined life is not worth living.</q>
+</div>
+</body>
+
+</html>

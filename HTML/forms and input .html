@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body bgcolor="blsck">
+    <form action="post" method="post">
+        <h1> Forms in HTML</h1>
+        <hr size="10" noshade>
+        <h2>Text:</h2>
+        <label for="fname">Enter your first name:</label>
+        <input type="text" name="name" id="fname" placeholder="First name"><br>
+        <label for="lname">Enter your last name:</label>
+        <input type="text" name="name" id="lname" placeholder="Last name"><br>
+
+        <h2>Radio:</h2>
+        <input type="radio" name="subject" id="Physics">
+        <label for="Physics">Physics</label><br>
+        <input type="radio" name="subject" id="Chemistry">
+        <label for="Chemistry">Chemistry</label><br>
+        <input type="radio" name="subject" id="Biology">
+        <label for="Biology">Biology</label><br>
+        <input type="radio" name="subject" id="Maths">
+        <label for="Maths">Maths</label><br>
+
+        <h2>Checkbox:</h2>
+        <input type="checkbox" name="vehicle" id="car">
+        <label for="car">Car</label><br>
+        <input type="checkbox" name="vehicle" id="Cycle">
+        <label for="Cycle">Cycle</label><br>
+        <input type="checkbox" name="vehicle" id="Bike">
+        <label for="Bike">Bike</label><br>
+
+        <h2>Password:</h2>
+        <label for="password">Enter password:</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+
+        <h2>Textarea:</h2>
+        <label for="address">Enter your address:</label><br>
+        <textarea name="address" id="address" cols="40" rows="9"></textarea>
+
+        <h2>Dropdown:</h2>
+        <label for="fruit">Enter your favorite food:</label>
+        <select name="fruit" id="fruit">
+            <option value="Select" selected>Select favorite fruit</option>
+            <option value="apple">Apple</option>
+            <option value="banana">banana</option>
+            <option value="mango">mango</option>
+            <option value="aam">aam</option>
+        </select>
+
+        <h2>Submit and reset:</h2>
+        <input type="submit" id ="submit" value="Submit" >
+        <input type="reset" id ="reset" value="Reset">      
+    </form>
+    
+</body>
+</html>
