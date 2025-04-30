@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* For events */
+        .btn {
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            padding: 10px
+        }
+
+        /* For event bubbling / */
+        .ccontainer {
+            background-color: gray;
+            height: 150px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .childbox {
+            background-color: rgb(245, 125, 125);
+            height: 80px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .thechild {
+            background-color: rgb(255, 0, 0);
+            height: 30px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        /* for set interval */
+        .interval {
+            background-color: aquamarine;
+            height: 80px;
+        }
+
+        /* for timeout */
+        .timeout {
+            background-color: beige;
+            height: 80px;
+            margin: 20px;
+        }
+
+        marquee {
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Events in JS:</h2>
+    <div class="container">
+        <div class="box">Hey I am a box</div>
+    </div>
+    <button class="btn" id="btn">Change Content</button>
+    <button class="btn" id="btn2">Change the text</button>
+
+    <h2>Event bubbling in JS:</h2>
+    <div class="ccontainer">
+        <div class="childbox">
+            <div class="thechild">I am a child in the ccontainer an childbox.</div>
+        </div>
+    </div>
+
+
+    <h2>Set interval:</h2>
+    <div class="interval">
+    </div>
+
+    <h2>Set interval:</h2>
+    <div class="timeout">
+    </div>
+
+    Attrinutes of marquee tag:
+    behavior - Specifies the scrolling behavior. Possible values are "slide", "scroll", "alternate". Default is "slide".
+    direction - Specifies the scrolling direction. Possible values are "up", "down", "left", "right". Default is "up".
+    loop - Specifies the number of times the content should scroll. Default is infinite.
+    scrollamount - Specifies the number of pixels to scroll each time. Default is 6.
+    <marquee behavior="scroll" scrollamount="1000" direction="">This is marquee tag</marquee>
+    <marquee direction="up" height="100px">
+        <p>AAPL: 123.45 (+1.23)</p>
+        <p>GOOG: 900.25 (-2.50)</p>
+        <p>AMZN: 3000.00 (+15.00)</p>
+    </marquee>
+
+    <script src="Test.js"></script>
+</body>
+
+</html>
