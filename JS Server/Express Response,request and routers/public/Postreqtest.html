@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      header h1 {
+        color: #fff;
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      .section {
+        padding: 40px 0;
+      }
+      
+      .section h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0 0 20px;
+      }
+      
+      .section p {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="section">
+        <h2>About Us</h2>
+        <p>This is my website. It has a nice header and some paragraphs of text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum.</p>
+      </section>
+      <section class="section">
+        <h2>Services</h2>
+        <p>Integer eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum.</p>
+      </section>
+      <section class="section">
+        <h2>Contact Us</h2>
+        <p>Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum. Sed euismod, libero eu dignissim eleifend, augue metus convallis nulla, in efficitur lacus felis in felis. Sed eu tellus eu libero sodales fermentum.</p>
+      </section>
+    </div>
+
+    <script>
+      async function testpost() {
+        let a = await fetch("/", {method: "PUT"});
+        let b = await a.text();
+        console.log(b);
+      }
+      testpost();
+    </script>
+  </body>
+</html>

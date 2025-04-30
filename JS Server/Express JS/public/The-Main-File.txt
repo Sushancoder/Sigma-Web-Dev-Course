@@ -1,0 +1,4 @@
+This is a demo file about how you can attach a file to the url using th express package, doing this is very easy:
+First: Create a folder(with any name but public is a convention) which is to be attached to the URL whenever the user makes a request for it.
+Second: Type app.use(express.static('public')) //You can type any name for the folder here it is named public which is recommended.
+Third:Go to the URL and type the file name along with the port. Like this :http://127.0.0.1:3000/the-main-file.txt
