@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color: yellow;
+  }
+
+  .box{
+    height: 80vh;
+    width: 80vw;
+  }
+  @media only screen and (orientation: landscape){
+    body{
+      background-color: red;
+    }
+    
+  }
+  /* @media only screen and (max-width: 600px){
+    body{
+      background-color:rgb(225, 0, 255);
+    }
+  } */
+
+  @media only screen and (max-width: 600px){
+    .box{
+      border: 10px solid black;
+    }
+  }
+
+  @media only screen and (min-width: 600px){
+    .box{
+      display: flex;
+      
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .box div{
+      border: 2px solid black;
+      
+    }
+  }
+</style>
+<body>
+  <div class="box">
+    I am a box.&nbsp;&nbsp;&nbsp;
+    <div>I am another box.&nbsp; &nbsp; &nbsp; </div>
+    <div>I am another box.&nbsp; &nbsp; &nbsp; </div>
+    <div>I am another box.&nbsp; &nbsp; &nbsp; </div>
+    <div>I am another box.&nbsp; &nbsp; &nbsp; </div>
+    <div>I am another box.&nbsp; &nbsp; &nbsp; </div>
+  </div>
+  
+</body>
+</html>

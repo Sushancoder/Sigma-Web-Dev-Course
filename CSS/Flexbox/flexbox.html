@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* any property applied here will be applied to all items for flex */
+
+        border: 2px solid black;
+        height: 50vh;
+        display: flex;
+        /* justify-content is used to align the content in main axis */
+        justify-content: center;
+
+        /* align-items is used to align the item in cross axis */
+        /* for more info go to C:\Users\Neha\OneDrive\Documents\Html websites\CWH sigma test\flexboxaxis */
+        align-items: center;
+
+        /* flex-direction is used to change the direction of flex items */
+        flex-direction: row;
+
+        /* flex-wrap is used to wrap the flex items  */
+        flex-wrap: wrap;
+
+        /* align-content is used to align flex items if they are present in multiple lines  it works like align-items but even with multiple lines */
+        align-content: flex-start;
+
+        /* flex-flow is used to change the direction and wrap of flex items together */
+        flex-flow: row wrap;
+
+        /* gap is used to change the gap between flex items it is just like the margin but only gives space between the items and not between the item and the main box  */
+        /* Syntax: <'row-gap'> <'column-gap'> */
+        /* we also have
+         row-gap: 24px; and 
+         column-gap: 24px; */
+
+                 /* gap is used to specify the gap between the elements only it is just like margin but only between the cells */
+        /* there are many ways to use the gap  */
+        /* row-gap is used to specify the gap between the rows only */
+        /* column-gap is used to specify the gap between the columns only */
+        /* gap is used as short hand for row-gap and column-gap Syntax: <'row-gap'> <'column-gap'>  */
+        /* you can also give a single argument if you want to set it to both row-gap and column-gap */
+        gap: 24px;
+
+        /* flex-grow is used to change the size of flex items for example if all items have flex grow 1 and one item has flex grow 2 it will double the size of the flex item than the other one which has flex grow 1*/
+        flex-grow: 1;
+
+        /* flex shrink is just like opposite of flex grow but not totally like flex grow but it is applied when necessary like if the screen size is smaller and all items have flex shrink 1 and one item has flex shrink 2 it will shrink the size of the flex item double than the other one which has flex shrink 1 it works when wrap is off*/
+        flex-shrink: 1;
+      }
+
+      /* order is used to set the order of the flex item where 0 is the default order, if we set the order to 1 it will be placed at the end , if we set the order to -1 it will be placed at the beginning and if we set the order to 3 or greater it will be placed after the item with order 1  */
+
+      .order1 {
+        order: 1;
+        flex-grow: 5;
+      }
+
+      .order2 {
+        order: 2;
+        flex-shrink: 3;
+      }
+      /* align-self is applied to a single item to align it  it works when wrap is off*/
+      .order34 {
+        order: 34;
+        align-self: flex-end;
+      }
+      .boxes {
+        border: 2px solid black;
+        margin: 2px;
+        height: 40px;
+        width: 40px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="boxes">1</div>
+      <div class="boxes order1">2</div>
+      <div class="boxes">3</div>
+      <div class="boxes">4</div>
+      <div class="boxes order2">5</div>
+      <div class="boxes">6</div>
+      <div class="boxes">7</div>
+      <div class="boxes">8</div>
+      <div class="boxes order34">9</div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes">10</div>
+    </div>
+  </body>
+</html>

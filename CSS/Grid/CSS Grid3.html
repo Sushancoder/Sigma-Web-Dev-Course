@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .boxes {
+        border: 2px solid black;
+        display: grid;
+        height: 70vh;
+        width: 70vw;
+
+        /* there is another way to create rows and colums in grid in css which is by using the fraction as fr property in the grid-template-rows and grid-template-columns */
+        /* here we made colums with the fractions 1/4 2/4 and 1/4 */
+        /* here we made colums with the rows 1/4 and 1/4 */
+
+        /* repeat function is used to repeat a code, syntax (no. of times, code to repeat) */
+        /* here minmax fuction is used to specify the minimum and maximum column of the element */
+        grid-template-columns: repeat(4, minmax(100px, 40px));
+        grid-template-rows: 1fr 1fr;
+
+        /* some special properties of grid  some of the following properties also works on flexbox*/
+
+        /* gap is used to specify the gap between the elements only it is just like margin but only between the cells */
+        /* there are many ways to use the gap  */
+        /* row-gap is used to specify the gap between the rows only */
+        /* column-gap is used to specify the gap between the columns only */
+        /* gap is used as short hand for row-gap and column-gap Syntax: <'row-gap'> <'column-gap'>  */
+        /* you can also give a single argument if you want to set it to both row-gap and column-gap */
+        gap: 10px;
+
+        /* justify-items is used to align all the cells in main axis */
+        justify-items: center;
+        /* align-items is used to align all the cells in cross axis */
+        align-items: center;
+
+        /* justify-content is used to align the whole grid in main axis */
+        justify-content: center;
+    /* align-content is used to align the whole grid in the cross axis */
+        align-content: center;
+        /* short hand for both justify-content and align-content is place-content */
+        place-content: center;
+
+        /* if you want to align the content in the cells then you can use the text align */
+        text-align: center;
+      }
+      .box {
+        height: 70px;
+        width: 70px;
+        border: 2px solid black;
+        font-size: 30px;
+      }
+
+      #one {
+        background-color: red;
+      }
+      #two {
+        background-color: blue;
+        /* align-self can be used on single item to align the specific cell align-self is used to align the item in cross axis/column */
+        align-self: flex-end;
+      }
+      #three {
+        background-color: green;
+        /* justify-self is used on single item to align the specific cell justify-self is used to align the item in main axis/row */
+        justify-self: flex-end;
+      }
+      #four {
+        background-color: yellow;
+      }
+      #five {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box" id="one">1</div>
+      <div class="box" id="two">2</div>
+      <div class="box" id="three">3</div>
+      <div class="box" id="four">4</div>
+      <div class="box" id="five">5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background-color: red;
+        width: 70vw;
+        height: 80vh;
+    }
+    .box{
+        height: 5vh;
+        width: 4vw;
+        background-color: yellow;
+        /* it sets that on what property the transition will apply like here transform property is being used as you can see in the tranform class below */
+        /* You can set transition-property: all; if you want the transition to work on all properties */
+        /* transition-property: transform; */
+
+        /* it sets the duration of the transition */
+        /* transition-duration: 4s; */
+
+        /* it sets which type of transition to use */
+        /* you can create your own transition-timing-function like
+        transition-timing-function:cubic-bezier(0,-0.94, 1, 1.63); */
+        /* transition-timing-function: ease-in-out; */
+
+        /* it sets that after how much time the transition will start after input */
+        /* transition-delay: 1s; */
+
+        /* short-hand for all transition properties */
+       transition: all 4s cubic-bezier(0.92, 0.16, 0, 0.89) 1s;
+    }
+    .transform{
+        /* here we can add as many functions as required that we want during the transition */
+        transform: translateX(10vw) translateY(20vh) scale(2);
+        background-color: aqua;
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box transform">
+        Hey
+        </div>
+    </div>
+</body>
+</html>

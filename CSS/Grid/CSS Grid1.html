@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .boxes {
+        border: 2px solid black;
+        display: grid;
+        /* specifies how many columns to add */
+        /* to add the names of the lines of the columns we can write the name of the line within the square brackets like here c1 c2 and c3 are the names of the lines that are present in the columns like the first line is c1 second line is c2 and third line is c3 */
+        grid-template-columns: [c1]100px [c2]100px [c3];
+
+        /* specifies how many rows to add */
+        /*to add the names of the lines of the rows we can write the name of the line within the square brackets like here r1 r2 r3 and r4 are the names of the lines that are present in the rows like the first line is r1 second line is r2 third line is r3 and r4 is the fourth line */
+        grid-template-rows: [r1]100px [r2]100px [r3]100px [r4];
+
+        /* for more info C:\Users\Neha\OneDrive\Documents\Html websites\CWH sigma test\css grid_placement_lines_and_tracks.png */
+
+
+        /* there is another way to create rows and colums in grid in css which is by using the fraction as fr property in the grid-template-rows and grid-template-columns */
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        font-size: 30px;
+      }
+
+      #one {
+        /* background-color: red; */
+
+        /* grid-row is used to specify the row where the element should be placed */
+        /* syntax for these are for the starting row is grid-row-start: ; and  for the ending row is grid-row-end: ; */
+        /* short hand for grid-row: start/end; */
+        grid-row: r1/r2;
+
+        /* grid-column is used to specify the column where the element should be placed */
+        /* syntax for these are for the starting column is grid-column-start: ; and  for the ending column is grid-column-end: ; */
+        /* short hand for grid-column: start/end; */
+        grid-column: c1/c3;
+
+        /* the items can overlap over each other in case if two or more elements have the same grid-row and grid-column */
+      }
+      #two {
+        background-color: blue;
+      }
+      #three {
+        background-color: green;
+      }
+      #four {
+        /* background-color: yellow; */
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      #five {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box" id="one">1</div>
+      <div class="box" id="two">2</div>
+      <div class="box" id="three">3</div>
+      <div class="box" id="four">4</div>
+      <div class="box" id="five">5</div>
+    </div>
+  </body>
+</html>
